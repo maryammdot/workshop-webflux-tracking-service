@@ -4,8 +4,7 @@ Workshop: Create a Spring Boot tracking service to ingest data from clients and 
 
 ## Setup
 
-This project has been created from [Spring Initializr](https://start.spring.io/):
-![configuration](docs/spring-initializr.png)
+This project has been created from [Spring Initializr](https://start.spring.io/)
 
 Requisites:
 - Java8+
