@@ -4,8 +4,7 @@ Workshop: Create a Spring Boot tracking service to ingest data from clients and 
 
 ## Setup
 
-This project has been created from [Spring Initializr](https://start.spring.io/):
-![configuration](docs/spring-initializr.png)
+This project has been created from [Spring Initializr](https://start.spring.io/)
 
 Requisites:
 - Java8+
@@ -83,7 +82,7 @@ cd workshop-webflux-tracking-service
     * Return an ERROR code for failed requests.
     * Consider adding a message additionally to the code in order to validate responses.
 
-(solved at branch: workshop/01-solved)
+(solved at branch: [workshop/01-done](https://github.com/alextremp/workshop-webflux-tracking-service/tree/workshop/01-done))
 
 ### 2 Create a Pulse logger
 
@@ -137,7 +136,7 @@ Consider:
 
 yeah, the "solved" part of this exercise won't be solved, obviously until the third block :)
 
-(solved at branch: workshop/02-solved) 
+(solved at branch: [workshop/02-done](https://github.com/alextremp/workshop-webflux-tracking-service/tree/workshop/02-done))
 
 ### 3 Publish Pulses to a Domain Event Bus keeping the logger as a domain event observer
 
@@ -183,7 +182,7 @@ public class DomainEventBusConfiguration {
 }
 ```  
 
-(solved at branch: workshop/03-solved)
+(solved at branch: [workshop/03-done](https://github.com/alextremp/workshop-webflux-tracking-service/tree/workshop/03-done))
 
 ### 4 Convert service errors into Pulses
 
@@ -191,7 +190,7 @@ When any error occurs under our Controller processing Pulses... what would happe
 
 * Let's capture the Controller errors and transform then into new Pulses with a SAVE_PULSE_ERROR event. 
 
-(solved at branch: workshop/04-solved)
+(solved at branch: [workshop/04-done](https://github.com/alextremp/workshop-webflux-tracking-service/tree/workshop/04-done))
 
 ### 5 Convert unhandled errors into Pulses
 
@@ -199,7 +198,7 @@ But... if we are facing an unexpected exception, or a bad request matched but no
 
 * Let's create a Spring's Global Error Handler to capture unhandled request exceptions and transform them into a new Pulse with the UNHANDLED_ERROR event.
 
-(solved at branch: workshop/05-solved) 
+(solved at branch: [workshop/05-done](https://github.com/alextremp/workshop-webflux-tracking-service/tree/workshop/05-done))
 
 ### 6 Extra: Performance evaluation
 
