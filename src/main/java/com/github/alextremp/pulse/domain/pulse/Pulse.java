@@ -45,11 +45,12 @@ public class Pulse {
 
   @Override
   public String toString() {
-    return "Pulse{" +
-        "id='" + id + '\'' +
-        ", clientId='" + clientId + '\'' +
-        ", name='" + name + '\'' +
-        ", payload=" + payload +
+    // PULSE | pulse_id: {pulse.id} | pulse_clientId: {pulse.clientId} | pulse_name: {pulse.name} | *{pulse.payload.key}: {pulse.payload.value}
+    return "PULSE | " +
+        "pulse_id: {" + id + '}' +
+        " | pulse_clientId: {" + clientId + '}' +
+        " | pulse_name: {" + name + '}' +
+        " | *{pulse.payload.key}: {" + payload.toString() +
         '}';
   }
 }

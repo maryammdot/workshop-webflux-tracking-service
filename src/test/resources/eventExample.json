@@ -1,0 +1,26 @@
+{
+  "id": "sample-request",
+  "events": [
+    {
+      "name": "EVENT_01",
+      "payload": {
+        "key1": "value1",
+        "key2": 2,
+        "key3": {
+          "key31": "value31"
+        }
+      }
+    },
+    {
+      "name": "EVENT_02"
+    },
+    {
+      "name": "EVENT_03",
+      "payload": {
+        "key3": {
+          "key31": "value31"
+        }
+      }
+    }
+  ]
+}
