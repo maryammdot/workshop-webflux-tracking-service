@@ -32,7 +32,7 @@ public class PulseController {
   public Mono<SavePulsesResponse> savePulses(@RequestBody String requestBody) {
     return Mono.fromCallable(() -> objectMapper.readValue(requestBody, SavePulsesRequest.class))
         .subscribeOn(Schedulers.parallel())
-        .flatMap(pulseApplicationService::savePulses)
+        .map(pulseApplicationService::savePulses)
         .onErrorResume(error -> onSavePulsesError(error, requestBody))
         .doOnNext(savePulsesResponse -> LOG.fine(() -> "RESPONSE::" + savePulsesResponse));
   }

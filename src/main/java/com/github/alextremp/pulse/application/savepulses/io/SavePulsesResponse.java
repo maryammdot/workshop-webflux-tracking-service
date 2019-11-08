@@ -2,8 +2,8 @@ package com.github.alextremp.pulse.application.savepulses.io;
 
 public class SavePulsesResponse {
 
-  static final String PROCESSED = "PROCESSED";
-  static final String ERROR = "ERROR";
+  public static final String PROCESSED = "PROCESSED";
+  public static final String ERROR = "ERROR";
 
   private String code;
   private String message;

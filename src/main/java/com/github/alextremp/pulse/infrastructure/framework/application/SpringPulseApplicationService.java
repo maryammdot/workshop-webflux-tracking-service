@@ -19,7 +19,7 @@ public class SpringPulseApplicationService implements PulseApplicationService {
   }
 
   @Override
-  public Mono<SavePulsesResponse> savePulses(SavePulsesRequest request) {
+  public SavePulsesResponse savePulses(SavePulsesRequest request) {
     return createEventsUseCase.savePulses(request);
   }
 }

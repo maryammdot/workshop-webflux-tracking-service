@@ -6,5 +6,5 @@ import reactor.core.publisher.Mono;
 
 public interface PulseApplicationService {
 
-  Mono<SavePulsesResponse> savePulses(SavePulsesRequest request);
+  SavePulsesResponse savePulses(SavePulsesRequest request);
 }
